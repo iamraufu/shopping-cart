@@ -25,9 +25,9 @@
 
                             <div class="col-md-5 center-item">
                                 <div class="input-group number-spinner">
-                                    <button id="phone-decrease" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                    <button onclick="handlePhoneChange(false)" id="phone-decrease" class="btn btn-default"><i class="fas fa-minus"></i></button>
                                     <input id="phone-count" type="text" class="form-control text-center" value="1">
-                                    <button id="phone-increase" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                    <button onclick="handlePhoneChange(true)" id="phone-increase" class="btn btn-default"><i class="fas fa-plus"></i></button>
                                 </div>
                                 <h5>$<span id="phone-total">1219</span></h5>
                                 <img src="images/remove.png" alt="" class="remove-item">
@@ -43,9 +43,9 @@
                             </div>
                             <div class="col-md-5 center-item">
                                 <div class="input-group number-spinner">
-                                    <button id="case-decrease" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                    <button onclick="handleCaseChange(false)" id="case-decrease" class="btn btn-default"><i class="fas fa-minus"></i></button>
                                     <input id="case-count" type="text" class="form-control text-center" value="1">
-                                    <button id="case-increase" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                    <button onclick="handleCaseChange(true)" id="case-increase" class="btn btn-default"><i class="fas fa-plus"></i></button>
 
                                 </div>
                                 <h5>$<span id="case-total">59</span></h5>
@@ -77,7 +77,8 @@
             </div>
         </div>
     </section>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/function.js"></script>
 </body>
 
 </html>
